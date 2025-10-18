@@ -5,7 +5,7 @@ const express = require('express');
 const morgan = require('morgan');
 const pino = require('pino');
 const axios = require('axios');
-const promClient = require('prom-client');
+const promClient = require('prom-client');  
 
 const app = express();
 
@@ -84,7 +84,7 @@ app.get('/', (req, res) => {
 
 app.get('/healthy', (req, res) => {
     res.status(200).json({
-        name: "👀 - Obserability 🔥- Abhishek Veeramalla",
+        name: "👀 - Obserability 🔥- Zain Waseem",
         status: "healthy"
     })
 });
